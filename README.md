@@ -1,71 +1,62 @@
-# Getting Started with Create React App
+# Touch Typing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application for practicing touch typing skills. It provides a typing box where users can type without looking at the keyboard, and it generates random key sequences that need to be typed accurately to progress in the challenge. The application also includes features such as sound effects, statistics tracking, and a timer.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To use this application, follow these steps:
 
-### `npm start`
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies by running the command: `npm install`.
+4. Start the application with the command: `npm start`.
+5. Open your web browser and access the application at `http://localhost:3000`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Make sure you have Node.js and npm installed on your machine before proceeding with the installation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Once the application is running, you can start typing in the provided typing box. The application will generate a random key sequence based on the selected challenge level. The goal is to type the keys accurately and progress to the next challenge level.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+- Typing Box: Displays the current key sequence and allows users to type.
+- Next Key Display: Shows the next key(s) that need to be typed.
+- Statistics: Displays information such as key count, accuracy, and timer.
+- Sound Effects: Plays sound effects for correct and incorrect key presses.
+- Challenge Level: Allows users to select the challenge level (number of words in the key sequence).
+- Timer: Tracks the time elapsed during typing practice.
+- Submit: Allows users to submit their typed key sequence for evaluation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Keyboard Controls
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Typing: Press the corresponding keys on the keyboard to type the displayed key sequence.
+- Pass: Click the "Pass" button when the entire key sequence has been typed correctly.
+- Fail: Click the "Fail" button if the current key sequence is incorrect.
+- Submit: Click the "Submit" button to submit the typed key sequence for evaluation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Configuration
 
-### `npm run eject`
+The application provides configuration options for sound settings and challenge levels.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Sound On/Off: Click the "Sound On/Off" button to toggle sound effects.
+- Challenge Level: Select the desired challenge level from the dropdown menu.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The following dependencies are required to run this application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React
+- react-bootstrap
+- redux
+- react-redux
 
-## Learn More
+These dependencies will be installed automatically when you run the installation command mentioned earlier.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application was developed by Shivpal Yadav as a project for touch typing practice. It utilizes React, Redux, and Bootstrap for the implementation.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
