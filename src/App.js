@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { startTyping, stopTyping, updateAccuracy, updateKeyCount } from './redux/actions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Form } from 'react-bootstrap';
+import { updateKeyCount } from './redux/actions';
 
 
 const correctLetterAudio = new Audio(correctLetterSound);
