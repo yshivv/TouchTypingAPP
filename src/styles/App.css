@@ -1,0 +1,144 @@
+.App {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 1rem;
+    color: white;
+}
+
+.typing-box {
+    margin-bottom: 1rem;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.next-keys {
+    margin-bottom: 1rem;
+}
+
+.statistics {
+    font-size: 1.2rem;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.board {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+}
+
+.stats-item svg {
+    margin-right: 5px;
+}
+
+.stats-item .value {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.result span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sound-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sound-toggle label {
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.letter-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.letter-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.letter-box p {
+    font-size: 48px;
+    font-weight: bold;
+}
