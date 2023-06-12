@@ -52,7 +52,7 @@ const TypingBox = ({
                     fontSize: '16px',
                     color: '#333',
                 }}
-                placeholder={typedKeys ? '' : "<Re-type if failed, press <TAB> or <ESC> to reset>"}
+                placeholder={typedKeys ? '' : "Type Here !!!"}
             />
             {showFailureMessage && (
                 <div className="text-danger">Wrong key! Try again.</div>

@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { startTyping, stopTyping, updateAccuracy, updateKeyCount } from './redux/actions';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import { updateKeyCount } from './redux/actions';
+
 
 
 const correctLetterAudio = new Audio(correctLetterSound);
@@ -87,7 +87,7 @@ function App() {
   const [isSoundOn, setIsSoundOn] = useState(true);
   const [challenge, setChallenge] = useState(1);
   const [isNextKeyValid, setIsNextKeyValid] = useState(true);
-
+  const [wordCount, setWordCount] = useState(0);
   const dispatch = useDispatch();
   const currentKey = useSelector((state) => state.currentKey);
   const keyCount = useSelector((state) => state.keyCount);
@@ -153,6 +153,9 @@ function App() {
       setTimeout(() => {
         setInputValue('');
       }, 100);
+    }
+    if (inputValue.length === 0 && currentKey === ' ') {
+      setWordCount((prevWordCount) => prevWordCount + 1);
     } else {
       failedThresholdAudio.play();
       setInputValue('FAIL');
@@ -174,6 +177,14 @@ function App() {
       }
     }
   };
+
+  const calculateWPM = () => {
+    const minutes = 5; // Total time in minutes
+    const words = wordCount;
+    const wpm = (words / minutes).toFixed(2);
+    return wpm;
+  };
+
 
   const handleKeyUp = () => {
     if (inputValue === 'FAIL') {
@@ -246,18 +257,18 @@ function App() {
   };
   const handleSubmit = () => {
     if (inputValue === nextKey) {
-      // Handle correct submission logic here
+
       console.log('Correct submission');
-      // Reset the typed keys
       setInputValue('');
-      // Generate a new random key
       setNextKey(generateRandomKey(challenge));
     } else {
-      // Handle incorrect submission logic here
       console.log('Incorrect submission');
-      // Set inputValue to 'FAIL' to display failure message in TypingBox
       setInputValue('FAIL');
     }
+    const typedWords = inputValue.split(' ').filter((word) => word !== '').length;
+    const calculatedAccuracy = ((typedWords / wordCount) * 100).toFixed(2);
+    setAccuracy(calculatedAccuracy);
+
   };
 
   const handleKeyPressChallenge = (e) => {
@@ -329,7 +340,8 @@ function App() {
           <div className="col-md-6">
             <div className="card p-3">
               <div className="card-body">
-                <Statistics keyCount={keyCount} accuracy={reduxAccuracy} timer={timer} startTimer={startTimer} stopTimer={stopTimer} isSoundOn={isSoundOn} />
+                <Statistics keyCount={keysPressed} accuracy={accuracy} timer={timer} startTimer={startTimer} stopTimer={stopTimer} isSoundOn={isSoundOn} />
+
 
               </div>
             </div>
