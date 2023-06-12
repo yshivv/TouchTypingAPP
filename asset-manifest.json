@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/TouchTypingAPP/static/css/main.4da62354.css",
+    "main.js": "/TouchTypingAPP/static/js/main.dc1b7dbb.js",
+    "static/js/787.33a00ed2.chunk.js": "/TouchTypingAPP/static/js/787.33a00ed2.chunk.js",
+    "static/media/incorrect-letter.mp3": "/TouchTypingAPP/static/media/incorrect-letter.68bacdfdbf6f7e34fcd6.mp3",
+    "static/media/failed-threshold.mp3": "/TouchTypingAPP/static/media/failed-threshold.7b134939934153701fac.mp3",
+    "static/media/passed-threshold.mp3": "/TouchTypingAPP/static/media/passed-threshold.a416443ef4fc2fc01f6e.mp3",
+    "static/media/correct-letter.mp3": "/TouchTypingAPP/static/media/correct-letter.46c8de69b3374dc8b23a.mp3",
+    "index.html": "/TouchTypingAPP/index.html",
+    "main.4da62354.css.map": "/TouchTypingAPP/static/css/main.4da62354.css.map",
+    "main.dc1b7dbb.js.map": "/TouchTypingAPP/static/js/main.dc1b7dbb.js.map",
+    "787.33a00ed2.chunk.js.map": "/TouchTypingAPP/static/js/787.33a00ed2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4da62354.css",
+    "static/js/main.dc1b7dbb.js"
+  ]
+}
