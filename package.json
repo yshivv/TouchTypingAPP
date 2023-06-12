@@ -1,6 +1,7 @@
 {
   "name": "typing-app",
   "version": "0.1.0",
+ "homepage": "https://yshivv.github.io/TouchTypingAPP", 
   "private": true,
   "homepage": "https://yshivv.github.io/TouchTypingAPP",
   "dependencies": {
