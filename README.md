@@ -2,6 +2,10 @@
 
 This is a React application for practicing touch typing skills. It provides a typing box where users can type without looking at the keyboard, and it generates random key sequences that need to be typed accurately to progress in the challenge. The application also includes features such as sound effects, statistics tracking, and a timer.
 
+
+
+[Deployed Link](https://yshivv.github.io/TouchTypingAPP/)
+
 ## Installation
 
 To use this application, follow these steps:
